@@ -4,12 +4,13 @@
 This small board is designed to simplify and organize the wiring in your glider.
 It provides a clean extension point to wire the cables for the LX S100 standalone variometer, reducing clunky connectors hanging free.
 
+![board](https://github.com/SoaringCircuits/LXConnect-S100/blob/master/docu/LXConnect-S100.png)
+
 ## Electrical installation
 Installation is easy, but some basic skills in creating cable harnesses are needed to create the connection from S100 to the board.
 While the S100 uses a D-Sub-15, the board uses a D-SUB-15HD to save space.
 The following diagram shows the harness to build to connect S100 and board. 
 
-![circuit](https://github.com/user-attachments/assets/ea30a13a-a493-47e3-9cfa-8575bd66f126)
 
 The board provides terminals for power, the switching inputs (SC, VP, IN1-4, OAT), as well as a connector for the CAN-Bus with optional terminator directly on the board.
 
