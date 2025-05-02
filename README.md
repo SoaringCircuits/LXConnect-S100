@@ -1,10 +1,10 @@
 # LXConnect S100
 
+![board](https://github.com/SoaringCircuits/LXConnect-S100/blob/master/docu/LXConnect-S100.png)
+
 ## General remarks
 This small board is designed to simplify and organize the wiring in your glider.
 It provides a clean extension point to wire the cables for the LX S100 standalone variometer, reducing clunky connectors hanging free.
-
-![board](https://github.com/SoaringCircuits/LXConnect-S100/blob/master/docu/LXConnect-S100.png)
 
 ## Electrical installation
 Installation is easy, but some basic skills in creating cable harnesses are needed to create the connection from S100 to the board.
