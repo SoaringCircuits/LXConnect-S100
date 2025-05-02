@@ -2972,7 +2972,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "TERM"
+		(property "Value" "CAN-TERMINATOR"
 			(at 187.96 109.2199 90)
 			(effects
 				(font
