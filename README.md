@@ -43,6 +43,9 @@ On the board side (D-SUB 15HD male), the connector has the following pin distrib
 | 14      | 12V-OUT      | 12V to external CAN-Devices |
 | 15      | SC           | Speed Command switch        |
 
+The numbers on both sides (male and female) are matching, so that pin 1 of the male connector matches with pin 1 of the female side.
+Just follow the numbers, they should be printed on the connector!
+
 For the distribution on the S100 side, please see the manual for the LX S100.
 
 ## CAN-Bus and terminator
@@ -110,4 +113,5 @@ If you have any questions or suggestions about the board, please send an e-mail 
 
 ------
 Electrical, PCB and case design by [ScotteC](https://github.com/ScotteC)
+
 
