@@ -19,6 +19,32 @@ The board uses two D-SUB connectors, one for the connection to the S100 and one 
 I recommend to use connectors with crimped contacts for both connectors, but solderd ones will work as well.
 All connections are direct lines, there is no need to crimp/solder more than one cable to a single contact.
 
+### Connector to S100
+To connect the board to the S100, a cable with a male D-SUB-15 High-Density (board) and a female D-SUB 15 (S100) is used.
+If using a shielded cable, a conductive backshell with the shielding clamped by the strain releif will connect the shielding to ground.
+
+On the board side (D-SUB 15HD male), the connector has the following pin distribution:
+
+| **PIN** | **Name**     | **Function**                |
+|---------|--------------|-----------------------------|
+| 1       | IN1          | External input 1            |
+| 2       | GND          | Ground                      |
+| 3       | GND          | Ground                      |
+| 4       | nc           | not connected               |
+| 5       | 12V-IN       | 12V Power to S100           |
+| 6       | IN2          | External input 2            |
+| 7       | IN4          | External input 4            |
+| 8       | nc           | not connected               |
+| 9       | VP           | Vario Priority              |
+| 10      | OAT          | Outside Air Temperature     |
+| 11      | IN3          | External Input 3            |
+| 12      | CAN-Low      | CAN Low                     |
+| 13      | CAN-High     | CAN High                    |
+| 14      | 12V-OUT      | 12V to external CAN-Devices |
+| 15      | SC           | Speed Command switch        |
+
+For the distribution on the S100 side, please see the manual for the LX S100.
+
 ## CAN-Bus and terminator
 The LX S100 provides a CAN-Bus to connect external devices like a remote stick, flap indicator, etc.
 The end of the Bus has to be terminated by a 120 Ohm resistor.
@@ -27,6 +53,21 @@ Originally LX provides a big D-SUB Connector with such a resistor to be plugged 
 
 This board provides a resistor with a solder jumper to properly terminate the bus if no external devices are connected, saving space and free hanging cables and connectors.
 If the onboard terminator should be used, just close the jumper by soldering it together.
+
+The CAN-Bus connector on the board uses the same pin distribution as the S100 (at the time of writing) on a D-SUB 9:
+
+| **PIN** | **Function** |
+|---------|--------------|
+| 1       | nv           |
+| 2       | CAN-Low      |
+| 3       | GND          |
+| 4       | nc           |
+| 5       | GND          |
+| 6       | nc           |
+| 7       | CAN-High     |
+| 8       | nc           |
+| 9       | 12V-OUT      |
+
 
 ## Wago Terminals
 All terminals are easy to operate, just push the actuator with a little screwdriver and push-in or pull-out the conductor.
@@ -69,3 +110,4 @@ If you have any questions or suggestions about the board, please send an e-mail 
 
 ------
 Electrical, PCB and case design by [ScotteC](https://github.com/ScotteC)
+
